@@ -13,6 +13,7 @@ public class BajrangBaan extends AppCompatActivity {
         setContentView(R.layout.activity_bajrang_baan);
         ActionBar actionBar =  getSupportActionBar();
         actionBar.setTitle("॥श्री बजरंग बाण पाठ॥");
+
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
     }

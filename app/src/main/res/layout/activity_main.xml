@@ -16,14 +16,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hanumaan_chalisha"
-                android:gravity="center"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
+
                 />
             <TextView
                 android:layout_width="match_parent"

@@ -9,10 +9,21 @@
     >
 
     <Button
+
+        android:id="@+id/btn2"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:textSize="30dp"
+        android:background="@drawable/theme_background"
+        android:text="@string/tittleaarti"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/btn1"
         android:layout_width="320dp"
         android:layout_height="100dp"
         android:textSize="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/theme_background"
         android:text="@string/hanuman_ji_chalisa"
         android:textStyle="bold"
@@ -21,13 +32,13 @@
 
     <Button
 
-        android:id="@+id/btn2"
+        android:id="@+id/btn3"
         android:layout_width="320dp"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
         android:textSize="30dp"
         android:background="@drawable/theme_background"
-        android:text="@string/tittleaarti"
+        android:text="@string/bajrangbaan"
         android:textStyle="bold" />
 
 

@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ActionBar actionBar =  getSupportActionBar();
-        actionBar.setTitle("Hanuman Chalisa");
+        actionBar.setTitle("।।हनुामन चालीसा।।");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 

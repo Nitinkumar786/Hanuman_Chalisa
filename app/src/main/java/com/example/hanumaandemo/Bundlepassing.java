@@ -1,11 +1,6 @@
 package com.example.hanumaandemo;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.net.wifi.hotspot2.pps.HomeSp;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,8 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+// View -> TextView -> Button
 public class Bundlepassing extends AppCompatActivity {
-    Button btn1,btn2;
+    Button btn1,btn2,btn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +20,7 @@ public class Bundlepassing extends AppCompatActivity {
         setContentView(R.layout.bundlepassing);
         btn1=findViewById(R.id.btn1);
         btn2=findViewById(R.id.btn2);
+        btn3=findViewById(R.id.btn3);
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +38,13 @@ public class Bundlepassing extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),BajrangBaan.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -56,7 +61,7 @@ public class Bundlepassing extends AppCompatActivity {
             Toast.makeText(this,"Exit",Toast.LENGTH_SHORT).show();
             finish();
         }
-        else if (itemId==R.id.shere){
+        else {
             Intent iShare = new Intent(Intent.ACTION_SEND);
             iShare.setType("text/plain");
             iShare.putExtra(Intent.EXTRA_TEXT,"Welcome Hanuman Chalisa App,");
@@ -64,9 +69,6 @@ public class Bundlepassing extends AppCompatActivity {
             Toast.makeText(this,"Share",Toast.LENGTH_SHORT).show();
         }
 
-        else {
-            Toast.makeText(this,"Notification",Toast.LENGTH_SHORT).show();
-        }
         return super.onOptionsItemSelected(item);
     }
 }

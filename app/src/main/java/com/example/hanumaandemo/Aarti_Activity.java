@@ -12,7 +12,7 @@ public class Aarti_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aarti);
         ActionBar actionBar =  getSupportActionBar();
-        actionBar.setTitle("Hanuman Aarti");
+        actionBar.setTitle("॥हनुमान आरती॥");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 
